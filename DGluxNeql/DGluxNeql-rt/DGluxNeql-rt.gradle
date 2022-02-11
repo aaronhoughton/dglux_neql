@@ -1,0 +1,22 @@
+/* Module Build File */
+
+description     = "Allow users to conduct NEQL searches in DGlux"
+ext {
+}
+niagaraModule {
+  moduleName = "DGluxNeql"
+  preferredSymbol = "dgnql"
+  runtimeProfile = "rt"
+}
+
+dependencies {
+  compile "Tridium:nre:4.7"
+  compile "Tridium:baja:4.7"
+  compile "Tridium:search-rt:4.7"
+  compile "Tridium:web-rt:4.7"
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}
